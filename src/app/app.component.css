@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-app h2 {
+  color: #153677;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-app h2 img {
+  width: 25px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+.row input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.row button {
+  border: none;
+  outline: none;
+  padding: 12px 25px;
+  background: #ff5945;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #edeef0;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul li input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and task text */
+  }
+
+ul li span {
+  flex: 1;
+  cursor: pointer;
+}
+
+ul li span.checked {
+  text-decoration: line-through;
+  color: gray;
+}
+
+ul li button {
+  border: none;
+  background: none;
+  font-size: 18px;
+  color: #ff5945;
+  cursor: pointer;
+}
+.checked {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+/* Modify button styles */
+ul li button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  /* New delete icon styling */
+  .delete-icon {
+    width: 20px; /* Adjust size */
+    height: 20px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  
+  .delete-icon:hover {
+    opacity: 1; /* Make it darker on hover */
+  }
+
+  .filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .filters button {
+    border: none;
+    background: #ccc;
+    padding: 5px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .filters button.active {
+    background: #ff5945;
+    color: white;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .buttons button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .buttons img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  
